@@ -1275,6 +1275,9 @@ section {
   transform: translateY(-2px);
   transition: all 0.3s ease;
 }
+
+
+
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
 
@@ -1327,4 +1330,32 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+/* Mobile Navbar Fix */
+@media (max-width: 768px) {
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: var(--nav-bg);
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+    padding: 20px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
