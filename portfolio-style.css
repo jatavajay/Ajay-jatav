@@ -1275,3 +1275,56 @@ section {
   transform: translateY(-2px);
   transition: all 0.3s ease;
 }
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .projects-grid,
+  .certificates-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
